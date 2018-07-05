@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+
+
+
+.myButton {
+    background-color:tomato;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.myButton:hover{
+    background-color: grey;
+    transform: scale(1.05);
+}
+
+
+
+.button{
+    position: relative;
+    top:0px;
+background:#eeeeee;
+border-radius: 2px;
+cursor: pointer;
+display: block;
+height: 60px;
+line-height: 60px;
+padding: 0 30px 0 25px;
+position: relative;
+transition: all .3s;
+border: 2px solid grey;
+font-size: 1.3em;
+letter-spacing: 2px;
+text-transform: uppercase;
+z-index: 0;
+margin: 60px auto 0 auto;
+color:#A93226;
+
+font-family: 'Open Sans', sans-serif;
+}
+.button:hover {
+color: #666;
+    transform: scale(1.1);
+}
+
+.button::before {
+    height: 100%;
+    width: 100%;
+    background-color:gray;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .3s;
+    z-index: -1;
+}
+.button.fade::before {
+           opacity:1.0;
+       }
+       button.fade:hover::before {
+               opacity:2.0;
+           }
+        
+</style>
+</head>
+</html>
+
+
+
+
+
+
